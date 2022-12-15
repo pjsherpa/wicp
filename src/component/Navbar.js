@@ -17,7 +17,13 @@ const Navbar = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   console.log(isMatch);
-  const PAGES = ["Home", "About us", "Travel Through", "Contact Us"];
+  const PAGES = [
+    "Home",
+    "About us",
+    "Travel Through",
+    "Contact Us",
+    "Follow us",
+  ];
 
   return (
     <React.Fragment>
@@ -32,6 +38,7 @@ const Navbar = () => {
           ) : (
             <>
               <Tabs
+                sx={{ marginLeft: "auto" }}
                 textColor="inherit"
                 value={value}
                 onChange={(e, value) => setValue(value)}
