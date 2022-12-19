@@ -11,7 +11,6 @@ import {
 import React, { useState } from "react";
 import ConnectingAirportsIcon from "@mui/icons-material/ConnectingAirports";
 import Burger from "./Burger";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [value, setValue] = useState();
@@ -25,6 +24,13 @@ const Navbar = () => {
     "Contact Us",
     "Follow us",
   ];
+
+  // const ResponsiveAppBar = () => {
+  //   const [anchorElNav, setAnchorElNav] = useState(null);
+  // };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
 
   return (
     <React.Fragment>
