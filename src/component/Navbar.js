@@ -17,20 +17,7 @@ const Navbar = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   console.log(isMatch);
-  const PAGES = [
-    "Home",
-    "About us",
-    "Travel Through",
-    "Contact Us",
-    "Follow us",
-  ];
-
-  // const ResponsiveAppBar = () => {
-  //   const [anchorElNav, setAnchorElNav] = useState(null);
-  // };
-  // const handleOpenNavMenu = (event) => {
-  //   setAnchorElNav(event.currentTarget);
-  // };
+  const PAGES = ["Home", "About us", "Travel Through", "Contact Us"];
 
   return (
     <React.Fragment>
